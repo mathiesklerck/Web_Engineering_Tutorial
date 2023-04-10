@@ -253,6 +253,7 @@
       <p>Ich hoffe, die Jungs machen bei der Seite nicht: &#128514; sondern &#128525;</p>
 
       <h2>Formular:</h2>
+     
       <form action="/beispiel.php" target="_blank" autocomplete="on">
         <label for="lname">Name:</label>
         <br>
@@ -262,7 +263,11 @@
         <br>
         <input type="text" id="fname" name="fname">
         <br>
-
+        <br>
+        <textarea name="frage" style="width:200px; height:150px;">Schreibe hier, wie die Konfirmation deiner Tante verlaufen ist.
+        </textarea>
+        <button type="button" onclick="alert('Schreib einfach und jaul net.')">Hilfe </button>
+          <br>
         <input type="radio" id="m" name="Geschlecht" value="männlich"/>
         <label for="m">männlich</label>
         <br>
@@ -271,6 +276,16 @@
         <br>
         <input type="radio" id="t" name="Geschlecht" value="Taucher"/>
         <label for="T">Taucher</label>
+        <br>
+
+        <label for="Alk">Lieblingsgetränk:</label>
+        <select id="alk" name="alk">
+          <option value="Gorbi">Gorbi</option>
+          <option value="Streit = Sterni, Sprite">Streit = Sterni, Sprite</option>
+          <option value="Heineken Emblem">Heineken Emblem</option>
+          <option value="Flens Wasser">Flens Wasser</option>
+          <option value="Ouzo Silber">Ouzo Silber</option>
+        </select>
         <br>
         <input type="submit">
       </form>
