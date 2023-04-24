@@ -45,26 +45,37 @@ ol {
     list-style-type: none;
   }
   
-  ul {
+ul {
     background: #234322;
     padding: 10px;
     list-style-type: none;
   }
   
-  ol li {
+ol li {
     background: #c9bbbb;
     color: gray;
     padding: 15px;
     list-style-type: none;
   }
   
-  ul li {
+ul li {
     background: #234322;
     color: gray;
     padding: 15px;
     list-style-type: none;
   }
 
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: auto;
+    height: auto;
+    text-align: center;
+    vertical-align: center;
+
+    background-color: #CECECE;
+    }
 p
 {
     color: #696969; 
