@@ -20,6 +20,28 @@
                     float: right;
                     
                   }
+                  div.galerie {
+                  margin: 5px;
+                  border: 1px solid #ccc;
+                  float: left;
+                  width: 180px;
+                }
+
+                div.galerie:hover {
+                  border: 0.5px dotted #696969;
+                }
+
+                div.gallery img {
+                  width: 90%;
+                  height: auto;
+                }
+
+                div.desc {
+                  
+                  text-align: center;
+                }
+                        
+        
         </style>
 
     <link rel="stylesheet" href="style.css">
@@ -228,6 +250,21 @@
               <iframe width="200px" src="demo_iframe.htm" name="iframe" title="AlkFrame"></iframe>
 
 <p><a href="https://wodka-gorbatschow.de/#home" target="iframe">Gorbi</a></p>
+
+<div class="galerie">
+  <a target="_blank" href="reudig.jpg">
+    <img src="reudig.jpg"  width="500" height="300">
+  </a>
+  <div class="desc">Schreib doch was du AFfe</div>
+</div>
+
+<div class="galerie">
+  <a target="_blank" href="sus.jpg">
+    <img src="sus.jpg" alt="Toolalk" width="500" height="300">
+  </a>
+  <div class="desc">Schreibe jetzt.</div>
+</div>
+
 
 <script>
   document.getElementById("Demo").innerHTML = "Kann kein Java:/";
