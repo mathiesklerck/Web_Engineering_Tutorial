@@ -10,6 +10,7 @@ h1 {
     font-family: "Arial", Times, serif; 
     font-weight: bold;
     z-index: 1;
+    
  }
 /* Hier wird der Body gestylt */
 body{
@@ -69,12 +70,16 @@ h2
 ol {
     background: #c9bbbb;
     list-style-type: none;
+    text-align: left;
+        
   }
   
 ul {
     background: #234322;
     padding: 10px;
     list-style-type: none;
+    text-align: left;
+
   }
   
 ol li {
@@ -82,6 +87,8 @@ ol li {
     color: gray;
     padding: 15px;
     list-style-type: none;
+    text-align: left;
+
   }
   
 ul li {
@@ -89,6 +96,7 @@ ul li {
     color: gray;
     padding: 15px;
     list-style-type: none;
+    text-align: left;
   }
 
 
@@ -140,7 +148,6 @@ p.zwei
     border-radius: 2px;
     width: 40%;
     background-color: goldenrod;
-
     outline-style: dotted;
     outline-color: plum;
     outline-width: thin;
