@@ -4,11 +4,25 @@ h1 {
     background-color: brown;
     padding: 5px;
     box-sizing: border-box  ;
+
+    text-align: center;
+
   }
 /* Hier wird der Body gestylt */
 body{
     background-color: beige;
-    
+    color: darkblue;
+}
+
+h2
+{
+    text-decoration-line: underline;
+    color: black;
+    text-align: center;
+    background-color: gainsboro;
+    padding: 2px;
+    box-sizing: border-box  ;
+    text-align: center;
 }
 
 p
@@ -23,6 +37,9 @@ p
 
     outline: 1px solid green;
     outline-offset: 3px;
+
+    text-align: center;
+
 }
 
 p.eins
@@ -34,6 +51,9 @@ p.eins
   margin-bottom: 40px;
   margin-right: 80px;
   margin-left: 80px;
+
+  text-align: left;
+
 }
 
 p.zwei
@@ -46,5 +66,8 @@ p.zwei
     outline-style: dotted;
     outline-color: plum;
     outline-width: thin;
+
+    text-align: left;
+
 }
 
