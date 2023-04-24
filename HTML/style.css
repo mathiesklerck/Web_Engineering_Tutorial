@@ -20,6 +20,9 @@ p
     border-color: black;
     border-radius: 5px;
     margin: 5px 5px 5px 5px;
+
+    outline: 1px solid green;
+    outline-offset: 3px;
 }
 
 p.eins
@@ -39,5 +42,9 @@ p.zwei
     border-radius: 2px;
     width: 40%;
     background-color: goldenrod;
+
+    outline-style: dotted;
+    outline-color: plum;
+    outline-width: thin;
 }
 
