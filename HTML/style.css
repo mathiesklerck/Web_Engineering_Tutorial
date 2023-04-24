@@ -17,6 +17,14 @@ body{
     color: darkblue;
 }
 
+span {
+    display: inline; 
+    width: 80px;
+    height: 80px;
+   
+    border: 1px dotted red; 
+    background-color: #BEBEBE; 
+  }
 div {
     position: fixed;
     top: 40px;
@@ -24,6 +32,8 @@ div {
     overflow: auto;
     float: left;
     }
+
+
 
 div.clearfix::after 
     {
