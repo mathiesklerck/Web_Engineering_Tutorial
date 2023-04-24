@@ -170,3 +170,11 @@ img:hover
     width: 100%;
 }
 
+h1::first-letter{
+    font-style: italic;
+    color: #ff00ff;
+}
+
+h2::first-line{
+    color: #ff00ff;
+}
