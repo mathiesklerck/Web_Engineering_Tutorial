@@ -185,3 +185,10 @@ i
 {
     opacity: 80%;
 }
+
+ul.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+  }
