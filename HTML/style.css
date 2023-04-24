@@ -3,6 +3,17 @@ h1 {
     text-align: center;
     background-color: brown;
   }
+/* Hier wird der Body gestylt */
 body{
     background-color: beige;
+    
 }
+
+p
+{
+    color: #696969; 
+    background-color: rebeccapurple;
+    border-style: dotted;
+    border-width: 2px;
+}
+
