@@ -16,6 +16,13 @@ body{
     color: darkblue;
 }
 
+div {
+    position: fixed;
+    top: 40px;
+    border: 2px dotted rebeccapurple;
+    
+  }
+
 a:link
 {
     background-color: red;
