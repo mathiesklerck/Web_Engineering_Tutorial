@@ -6,7 +6,7 @@ h1 {
     box-sizing: border-box  ;
     text-transform: uppercase;
     text-align: center;
-
+    text-shadow: 0 0 3px #ff00ff;
   }
 /* Hier wird der Body gestylt */
 body{
