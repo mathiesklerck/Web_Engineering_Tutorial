@@ -22,12 +22,22 @@ p
     margin: 5px 5px 5px 5px;
 }
 
-p.one
+p.eins
 {
+    border-style: solid;
     border-radius: 5px;
+    width: 80%;
     margin-top: 40px;
   margin-bottom: 40px;
   margin-right: 80px;
   margin-left: 80px;
+}
+
+p.zwei
+{
+    border-style: dotted;
+    border-radius: 2px;
+    width: 40%;
+    background-color: goldenrod;
 }
 
