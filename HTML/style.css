@@ -40,6 +40,31 @@ h2
     font-weight: bold;  
 }
 
+ol {
+    background: #c9bbbb;
+    list-style-type: none;
+  }
+  
+  ul {
+    background: #234322;
+    padding: 10px;
+    list-style-type: none;
+  }
+  
+  ol li {
+    background: #c9bbbb;
+    color: gray;
+    padding: 15px;
+    list-style-type: none;
+  }
+  
+  ul li {
+    background: #234322;
+    color: gray;
+    padding: 15px;
+    list-style-type: none;
+  }
+
 p
 {
     color: #696969; 
