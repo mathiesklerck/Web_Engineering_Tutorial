@@ -2,6 +2,8 @@ h1 {
     color: greenyellow;
     text-align: center;
     background-color: brown;
+    padding: 5px;
+    box-sizing: border-box  ;
   }
 /* Hier wird der Body gestylt */
 body{
