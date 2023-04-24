@@ -7,7 +7,9 @@ h1 {
     text-transform: uppercase;
     text-align: center;
     text-shadow: 0 0 3px #ff00ff;
-  }
+    font-family: "Arial", Times, serif; 
+    font-weight: bold;
+ }
 /* Hier wird der Body gestylt */
 body{
     background-color: beige;
@@ -23,6 +25,8 @@ h2
     padding: 2px;
     box-sizing: border-box  ;
     text-align: center;
+    font-family: "Arial", Times, serif; 
+    font-weight: bold;  
 }
 
 p
@@ -39,7 +43,8 @@ p
     outline-offset: 3px;
 
     text-align: center;
-
+    font-size: 12px;
+    font-family: "Garamond", Times, sans-serif; 
 }
 
 p.eins
@@ -68,6 +73,6 @@ p.zwei
     outline-width: thin;
 
     text-align: left;
-
+    font-style: italic;
 }
 
