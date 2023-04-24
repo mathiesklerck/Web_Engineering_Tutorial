@@ -22,8 +22,15 @@ div {
     top: 40px;
     border: 2px dotted rebeccapurple;
     overflow: auto;
-  }
+    float: left;
+    }
 
+div.clearfix::after 
+    {
+        content: "Test";
+        clear: both;
+        display: table;
+      }
 a:link
 {
     background-color: red;
