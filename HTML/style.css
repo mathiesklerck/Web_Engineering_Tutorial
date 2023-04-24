@@ -160,3 +160,13 @@ p.eins + p.zwei {
     background-color: #AEAEAE;
   }
 
+i.highlight:hover
+{
+    background-color: red;    
+}
+
+img:hover
+{
+    width: 100%;
+}
+
