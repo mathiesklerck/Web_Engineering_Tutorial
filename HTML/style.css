@@ -71,7 +71,7 @@ ol {
     background: #c9bbbb;
     list-style-type: none;
     text-align: left;
-        
+
   }
   
 ul {
@@ -155,4 +155,8 @@ p.zwei
     text-align: left;
     font-style: italic;
 }
+
+p.eins + p.zwei {
+    background-color: #AEAEAE;
+  }
 
