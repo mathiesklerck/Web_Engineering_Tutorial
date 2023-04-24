@@ -163,11 +163,13 @@ p.eins + p.zwei {
 i.highlight:hover
 {
     background-color: red;    
+    opacity: 100%;
 }
 
 img:hover
 {
     width: 100%;
+    opacity: 50%;
 }
 
 h1::first-letter{
@@ -177,4 +179,9 @@ h1::first-letter{
 
 h2::first-line{
     color: #ff00ff;
+}
+
+i
+{
+    opacity: 80%;
 }
