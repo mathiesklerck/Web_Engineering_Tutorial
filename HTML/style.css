@@ -21,7 +21,7 @@ div {
     position: fixed;
     top: 40px;
     border: 2px dotted rebeccapurple;
-
+    overflow: auto;
   }
 
 a:link
