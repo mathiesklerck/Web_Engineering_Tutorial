@@ -16,6 +16,17 @@ body{
     color: darkblue;
 }
 
+a:link
+{
+    background-color: red;
+}
+
+a:visited
+{
+    background-color: turquoise;
+}
+
+
 h2
 {
     text-decoration-line: underline;
