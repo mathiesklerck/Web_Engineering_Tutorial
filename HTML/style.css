@@ -36,6 +36,7 @@ div {
     border: 2px dotted rebeccapurple;
     overflow: auto;
     float: left;
+    width: max(40%, 400px);
     }
 
 
