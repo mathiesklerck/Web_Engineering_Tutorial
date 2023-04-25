@@ -10,12 +10,16 @@ h1 {
     font-family: "Arial", Times, serif; 
     font-weight: bold;
     z-index: 1;
-    
+    counter-reset: section;
  }
+
+
+
 /* Hier wird der Body gestylt */
 body{
     background-color: beige;
     color: darkblue;
+    counter-reset: subsection;
 }
 
 span {
@@ -134,9 +138,9 @@ p.eins
     border-radius: 5px;
     width: 80%;
     margin-top: 40px;
-  margin-bottom: 40px;
-  margin-right: 80px;
-  margin-left: 80px;
+    margin-bottom: 40px;
+    margin-right: 80px;
+    margin-left: 80px;
 
   text-align: left;
 
@@ -175,6 +179,18 @@ img:hover
 h1::first-letter{
     font-style: italic;
     color: #ff00ff;
+}
+
+h1::before 
+{
+    counter-increment: section;
+    content: "Section " counter(section) ". ";
+}
+  
+h2::before 
+{
+counter-increment: subsection;
+content: counter(section) "." counter(subsection) " ";
 }
 
 h2::first-line{
