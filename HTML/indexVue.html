@@ -4,33 +4,45 @@
         <meta charset="UTF-8"/>
         <title>VueDocument</title>
         <script src="https://unpkg.com/vue@3"></script>
+        <style>
+            html, body{
+                height: 100%;
+            }
+
+            body{
+                display: grid;
+                place-items: center;
+            }
+
+            .text-red{
+                color: red;
+            }
+
+            .text-green{
+                color: green;
+            }
+        </style>
+        </style>
     </head>
     <body>
         <div id="app">
-            <p>
-                <input type="text" v-model="greeting">
-            </p>
-
-            <p id="app">
-                {{ greeting }} ({{ greeting.length }})
-            </p>
+            <button :class="active ? 'text-green': 'text-red' " @click="toggle">Klick mich</button>
         </div>
         <script>
             Vue.createApp({
-                data() {
-                    return {
-                        greeting: 'Hallo du *ffe'
+               data(){
+                return{
+                    active: false
                     };
                 },
-                mounted(){
-                    setTimeout(() => {
-                        this.greeting = 'Aenderung';
-
-                    }, 3000)
+                methods: {
+                    toggle(){
+                        this.active  = ! this.active;
+                    }
                 }
-
-
-            }).mount('#app');
+                
+            }
+            ).mount('#app');
 
         </script>
     </body>
