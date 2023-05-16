@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="h-full">
     <head>
         <meta charset="UTF-8"/>
         <title>VueDocument</title>
@@ -26,23 +26,77 @@
     </head>
     <body>
         <div id="app">
-            <button :class="active ? 'text-green': 'text-red' " @click="toggle">Klick mich</button>
+            <section v-show="toDoAssignments.length" class="mt-8">
+                <h2 class="font-bold mb-2">To-Do Assignments</h2>
+
+                <ul>
+                    <li v-for="assingment in toDoAssignments" 
+                        :key="assingment.id">
+                       <label> 
+                        {{assingment.name}}
+                        
+                        <input type="checkbox" v-model="assingment.complete">
+
+                       </label>
+                    
+                    </li>
+                </ul>
+
+                <pre>
+
+                    {{assingments}}
+                </pre>
+            </section>
+
+
+            <section>
+                <h2 class="font-bold mb-2">Completed Assignments</h2>
+
+                <ul>
+                    <li v-for="assingment in assingments.filter(a =>  a.complete)" 
+                        :key="assingment.id">
+                       <label> 
+                        {{assingment.name}}
+                        
+                        <input type="checkbox" v-model="assingment.complete">
+
+                       </label>
+                    
+                    </li>
+                </ul>
+
+                <pre>
+
+                    {{assingments}}
+                </pre>
+            </section>
+            
         </div>
         <script>
-            Vue.createApp({
-               data(){
-                return{
-                    active: false
-                    };
-                },
-                methods: {
-                    toggle(){
-                        this.active  = ! this.active;
+            let app = {
+                data() {
+                    return{
+                        assingments: [
+                            {name: 'Finish gar nixxx', complete: false, id: 1},
+                            {name: 'sus', complete: false, id: 2}
+
+                        ]
                     }
                 }
-                
             }
-            ).mount('#app');
+
+            computed:{
+                completedAssignments()
+                {
+                    return this.assingments.filter(assingment => assingment.complete);
+                }
+
+                toDoAssignments()
+                {
+                    return this.assingments.filter(assingment => ! assingment.complete);
+                }
+            }
+            Vue.createApp(app).mount('#app');
 
         </script>
     </body>
