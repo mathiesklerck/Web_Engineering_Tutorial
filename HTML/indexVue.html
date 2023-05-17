@@ -10,22 +10,13 @@
             
             
         </div>
-        <script>
+        <script type="module">
+            import AppButton from "HTML/components/App-Button.js";
+
             let app = {
-                components: {
-                    'ein-button': {
-                        template: `
-                            <button class="border rounded px-4 py-4" :disabled="processing">
-                                <slot/>
-                            </button>
-                        
-                        `,
-                        data(){
-                            return{
-                                processing: true
-                            };
-                        }
-                    },
+                components: 
+                {
+                    'mein-button': AppButton
                 }
             };
 
