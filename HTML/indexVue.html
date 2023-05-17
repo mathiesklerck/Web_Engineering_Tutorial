@@ -4,22 +4,36 @@
         <meta charset="UTF-8"/>
         <title>VueDocument</title>
         <script src="https://unpkg.com/vue@3"></script>
+        <style>
+            @keyframes spinner {
+            to {transform: rotate(360deg);}
+            }
+            .is-loading {color: transparent;}
+
+            .is-loading:before {
+            content: '';
+            box-sizing: border-box;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 30px;
+            height: 30px;
+            margin-top: -15px;
+            margin-left: -15px;
+            border-radius: 50%;
+            border: 1px solid #ccc;
+            border-top-color: #07d;
+            animation: spinner .6s linear infinite;
+            }
+        </style>
     </head>
     <body>
         <div id="app">
-            
+            <mein-button :processing="true">Abschicken</mein-button>
             
         </div>
         <script type="module">
-            import AppButton from "HTML/components/App-Button.js";
-
-            let app = {
-                components: 
-                {
-                    'mein-button': AppButton
-                }
-            };
-
+            import App from "HTML/components/App.js";
             Vue.createApp(app).mount('#app');
 
         </script>
