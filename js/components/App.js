@@ -1,10 +1,9 @@
-import Assignments from "./Assignments.js"
+import Assignments from "./Assignments.js";
 
 export default {
-
-    components: {Assignments},
+    components: { Assignments },
 
     template: `
-        <assignments></assignments>  
+        <assignments></assignments>    
     `,
 }

@@ -1,0 +1,19 @@
+{
+    "assignments": [
+      {
+        "name": "Beende das Projekt",
+        "complete": false,
+        "id": 1,
+        "tag": "Mathe"
+      },
+  
+      {
+        "name": "Korrigiere die Rechtschreibung",
+        "complete": false,
+        "id": 1,
+        "tag": "Deutsch"
+      }
+  
+      
+    ]
+  }

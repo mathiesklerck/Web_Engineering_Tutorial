@@ -5,37 +5,51 @@ export default {
     components: { AssignmentList, AssignmentCreate },
 
     template: `
-        <section class="space-y-6">
-            <assignment-list :assignments="filters.inArbeit" title="In Arbeit"></assignment-list>
-            <assignment-list :assignments="filters.fertig" title="Fertig"></assignment-list>
+        <section class="flex gap-8">
+            <assignment-list :assignments="filters.inArbeit" title="In Arbeit">
+                <assignment-create @add="add"></assignment-create> 
+            </assignment-list>
             
-            <assignment-create @add="add"></assignment-create> 
+            <div v-show="zeigFertige">
+                <assignment-list 
+                    :assignments="filters.Fertiggestellt" 
+                    title="Fertiggestellt" 
+                    can-toggle
+                    @toggle="zeigFertige = !zeigFertige"
+                ></assignment-list>
+            </div> 
         </section>
     `,
 
     data() {
         return {
-            assignments: [
-                { name: 'Beende Projekt', complete: false, id: 1, tag: 'Mathe' },
-                { name: 'Korrigiere Rechtschreibung', complete: false, id: 2, tag: 'Deutsch' }
-            ],
+            assignments: [],
+            zeigFertige: true
         }
     },
 
     computed: {
         filters() {
             return {
-                inProgress: this.assignments.filter(assignment => ! assignment.complete),
-                completed: this.assignments.filter(assignment => assignment.complete)
+                inArbeit: this.assignments.filter(assignment => ! assignment.complete),
+                Fertiggestellt: this.assignments.filter(assignment => assignment.complete)
             };
         }
+    },
+
+    created() {
+        fetch('http://localhost:8081/assignments')
+            .then(response => response.json())
+            .then(assignments => {
+                this.assignments = assignments;
+            });
     },
 
     methods: {
         add(name) {
             this.assignments.push({
                 name: name,
-                completed: false,
+                Fertiggestellt: false,
                 id: this.assignments.length + 1
             });
         }

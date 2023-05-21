@@ -11,7 +11,7 @@
             "request": "launch",
             "name": "Launch Chrome against localhost",
             "url": "http://localhost:8080",
-            "file": "/Users/mathiesklerck/Documents/Web_Engineering/HTML/indexVue.html"
+            "file": "vue-project/src/App.vue"
         }
     ]
 }
