@@ -7,6 +7,16 @@ export default {
         <section class="space-y-6">
             <assignment-list :assignments="filters.inArbeit" title="In Arbeit"></assignment-list>
             <assignment-list :assignments="filters.fertig" title="Fertig"></assignment-list>
+
+            <form>
+                <div class="border border-gray-400">
+                    <input placeholder="New Assingment" class="text-black">
+                    <button type="submit" class="bg-white text-black">Add</button>
+
+                    
+                    </input>
+                </div>
+            </form>
         </section>
     `,
 
