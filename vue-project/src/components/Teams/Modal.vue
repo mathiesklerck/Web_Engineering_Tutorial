@@ -5,25 +5,34 @@
 </script>
 
 <template>
-  <div v-if="show" class="modal-mask">
-    <div class="modal-container">
-      <div>
+    <Transition
+        enter-from-class="opacity-0 scale-125"
+        enter-to-class="opacity-100 scale-100"
+        enter-active-class="transition duration-300"
+        leave-active-class="transition duration-200"
+        leave-from-class="opacity-100 scale-100"
+        leave-to-class="opacity-0 scale-125"
+        >
+            <div v-if="show" class="modal-mask">
+                <div class="modal-container">
+                <div>
 
-        <slot>Grundaufbau</slot>
-      </div>
+                    <slot>Grundaufbau</slot>
+                </div>
 
 
-      <footer class="modal-footer">
+                <footer class="modal-footer">
 
-        <slot name="footer">
-          <button @click="$emit('schöießen')">Close</button>
-        </slot>
+                    <slot name="footer">
+                    <button @click="$emit('schöießen')">Close</button>
+                    </slot>
 
-      </footer>
+                </footer>
 
-    </div>
+                </div>
 
-  </div>
+            </div>
+    </Transition>
 </template>
 
 <style>
@@ -61,7 +70,7 @@
     border-radius: 10px;
     }
 
-    
+
     .modal-footer button:hover 
     {
     background: #187187;
