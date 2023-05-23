@@ -1,0 +1,48 @@
+{
+
+    "name": "Smiley",
+    "spots": 4,
+    "members": 
+
+    [
+        {
+            "name": "Sergey Hellwig",
+
+            "email": "sh@hs-fl.de",
+
+            "status": "Active"
+
+
+
+        },
+
+        {
+            "name": "Jakob Matzen",
+
+            "email": "jm@hs-fl.de",
+
+            "status": "Active"
+        },
+
+        {
+            "name": "Ben Held",
+
+            "email": "bh@hs-fl.de",
+
+            "status": "Active"
+        },
+
+
+        {
+            "name": "Max Hering",
+
+            "email": "mh@hs-fl.de",
+
+            "status": "Active"
+        }
+
+
+
+    ]
+
+}

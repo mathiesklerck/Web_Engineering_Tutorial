@@ -5,17 +5,26 @@
     import TeamMembers from "@/components/Teams/TeamMembers.vue";
     import TeamFooter from "@/components/Teams/TeamFooter.vue";
 
+    let team = useTeamStore();
+    team.fill();
+
+    
+    setTimeout(() => 
+    {
+    team.grow(25);
+    }, 2000);
+
 </script>
 
 <template>
-  <TeamHeader :team="team" />
+    <TeamHeader />
 
-  <div class="place-self-center flex flex-col gap-y-3" style="width: 725px">
-    
-    <TeamMembers :team="team" />
-  </div>
+        <div class="place-self-center flex flex-col gap-y-3" style="width: 725px">
+            <TeamMembers />
+        </div>
 
-  <TeamFooter :team="team" />
+        
+    <TeamFooter />
 
 
 </template>
