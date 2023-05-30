@@ -1,20 +1,32 @@
-import { reactive } from "vue";
+import { defineStore } from "pinia";
 
-export let counter = reactive
-({
-
-
-  count: 0,
-
-  increment() 
+export let useCounterStore = defineStore('counter', 
+{
+  state() 
   {
-    if (this.count >= 10) 
-    {
-      return;
-    }
+    return {
+      count: 5
+    };
 
-    this.count++;
+  },
+
+  getters: 
+  {
+    remaining() {
+      return 10 - this.count;
+    }
+    
+  },
+
+  actions: 
+  {
+    increment() {
+      if (this.count < 10) {
+        this.count++;
+      }
+    }
   }
+
 
   
 });
